@@ -5,61 +5,61 @@
 # The suffix `c` stands for "Clipboard".
 
 snippet l
-	[${1:text}](${2:address})
+	[${1}](${2})
 snippet l*
-	[${1:link}](${2:`@*`})
+	[${1}](${2:`@*`})
 snippet lc
-	[${1:link}](${2:`@+`})
+	[${1}](${2:`@+`})
 snippet l"
-	[${1:text}](https://${2:address} "${3:title}")
+	[${1}](https://${2} "${3}")
 snippet l"*
-	[${1:link}](${2:`@*`} "${3:title}")
+	[${1}](${2:`@*`} "${3}")
 snippet l"c
-	[${1:link}](${2:`@+`} "${3:title}")
+	[${1}](${2:`@+`} "${3}")
 snippet l:
-	[${1:id}]: https://${2:url}
+	[${1}]: https://${2}
 
 snippet l:*
-	[${1:id}]: ${2:`@*`}
+	[${1}]: ${2:`@*`}
 
 snippet l:c
-	[${1:id}]: ${2:`@+`}
+	[${1}]: ${2:`@+`}
 
 snippet l:"
-	[${1:id}]: https://${2:url} "${3:title}"
+	[${1}]: https://${2} "${3}"
 
 snippet l:"*
-	[${1:id}]: ${2:`@*`} "${3:title}"
+	[${1}]: ${2:`@*`} "${3}"
 
 snippet l:"c
-	[${1:id}]: ${2:`@+`} "${3:title}"
+	[${1}]: ${2:`@+`} "${3}"
 
-snippet ![
-	![${1:alttext}](${2:/images/image.jpg})
-snippet ![*
-	![${1:alt}](${2:`@*`})
-snippet ![c
-	![${1:alt}](${2:`@+`})
-snippet !["
-	![${1:alttext}](${2:/images/image.jpg} "${3:title}")
-snippet !["*
-	![${1:alt}](${2:`@*`} "${3:title}")
-snippet !["c
-	![${1:alt}](${2:`@+`} "${3:title}")
-snippet ![:
-	![${1:id}]: ${2:url}
-
-snippet ![:*
-	![${1:id}]: ${2:`@*`}
-
-snippet ![:"
-	![${1:id}]: ${2:url} "${3:title}"
-
-snippet ![:"*
-	![${1:id}]: ${2:`@*`} "${3:title}"
-
-snippet ![:"c
-	![${1:id}]: ${2:`@+`} "${3:title}"
+# snippet ![
+# 	![${1:alttext}](${2:/images/image.jpg})
+# snippet ![*
+# 	![${1:alt}](${2:`@*`})
+# snippet ![c
+# 	![${1:alt}](${2:`@+`})
+# snippet !["
+# 	![${1:alttext}](${2:/images/image.jpg} "${3:title}")
+# snippet !["*
+# 	![${1:alt}](${2:`@*`} "${3:title}")
+# snippet !["c
+# 	![${1:alt}](${2:`@+`} "${3:title}")
+# snippet ![:
+# 	![${1:id}]: ${2:url}
+#
+# snippet ![:*
+# 	![${1:id}]: ${2:`@*`}
+#
+# snippet ![:"
+# 	![${1:id}]: ${2:url} "${3:title}"
+#
+# snippet ![:"*
+# 	![${1:id}]: ${2:`@*`} "${3:title}"
+#
+# snippet ![:"c
+# 	![${1:id}]: ${2:`@+`} "${3:title}"
 
 snippet <
 	<http://${1:url}>
@@ -101,14 +101,14 @@ snippet blockquote-link
 	{% endblockquote %}
 
 snippet code
-	\`\`\`${1}
-	${0:${VISUAL}}
+	\`\`\`
+	${1}
 	\`\`\`
 
 # Language.
 snippet codel
-	\`\`\`${1:language}
-	${2:code}
+	\`\`\`${1}
+	${2}
 	\`\`\`
 
 snippet codeblock-short
