@@ -521,3 +521,14 @@ snippet fprs
 	print("$0", file=${1:sys.stderr})
 snippet fprf
 	print(f"$0", file=${1:sys.stderr})
+
+# Fast API
+snippet fapi
+	from fastapi import FastAPI
+
+	app = FastAPI()
+
+
+	@app.get("/")
+	async def root():
+    	return {"message": "Hello World"}
